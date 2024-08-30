@@ -1,0 +1,49 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron:  '11 11 * * 2'
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    permissions:
+      contents: write
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: ipinfo
+        run: wget -O country_asn.csv.gz https://ipinfo.io/data/free/country_asn.csv.gz?token="${{ secrets.IPINFO_KEY }}"; gzip -d country_asn.csv.gz
+
+      - name: qqwry
+        run: wget https://raw.githubusercontent.com/FW27623/qqwry/main/qqwry.dat
+
+      - name: IP2LOCATION
+        run: wget https://github.com/renfei/ip2location/raw/master/IP2LOCATION-LITE-DB11.IPV6.BIN.ZIP; unzip IP2LOCATION-LITE-DB11.IPV6.BIN.ZIP
+
+      - name: download
+        run: wget -O mjjipk "${{ secrets.MJJIPK_URL }}" 
+
+      - name: generate
+        run: chmod +x mjjipk; ./mjjipk
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: commit by action
+          file_pattern: 'mjjipk.mmdb sample.txt'
