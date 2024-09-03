@@ -66,7 +66,10 @@ mmdbinspect --db mjjipk.mmdb 211.1.1.1 111.1.1.1
       languages:
         - en_US
 ```
-在 wireshark 中使用时, 在高级中搜索 mmdb, 配置 `nameres.maxmind_db_paths` 为 mjjipk.mmdb 所在目录的路径
+在 wireshark 中使用时, 在高级中搜索 mmdb, 配置 `nameres.maxmind_db_paths` 为 mjjipk.mmdb 所在目录的路径  
+使用 `ip.geoip.city` 等[相关过滤器](https://www.wireshark.org/docs/dfref/i/ip.html)
+<img width="788" alt="image" src="https://github.com/user-attachments/assets/1d3335b2-0183-4b1f-af0d-b3f70d0328f5">
+
 
 ### 更新和维护
 目前依赖 GitHub Actions 每周更新一次
