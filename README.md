@@ -2,7 +2,9 @@
 一个适合 mjj 的 IP 数据库, 注重易读和在命令行中使用, 包含位置和 AS 信息, 以 mmdb 方式提供
 #### 数据源
 混合了 qqwry, ip2location, ipinfo 的信息,规则如下
-1. ip2location 和 ipinfo 都定位为 CN 的 IP, 采用 qqwry 的信息(更适合国内用户)
+
+0. 知名的国内段, 采用 qqwry 的信息, 如 114.114.112.0/21, CN2 59.43
+1. qqwry 和 ipinfo 都定位为 CN 的段, 采用 qqwry 的信息(更适合国内用户)
 2. ip2location 和 ipinfo 国家定位相同时, 采用 ip2location 的信息(ipinfo 只到国家一级)
 3. ip2location 和 ipinfo 国家定位不一致时, 采用 ipinfo 信息
 4. 如果可用, 则使用 ipinfo 的 AS 信息
@@ -11,7 +13,7 @@
 只提供 mmdb, 可以使用工具/库解析, 也支持 wireshark 直接使用
 
 ```
-mmdbinspect --db mjjipk.mmdb 211.1.1.1 111.1.1.1
+mmdbinspect --db mjjipk.mmdb 211.1.1.1 223.5.5.5
 [
     {
         "Database": "mjjipk.mmdb",
@@ -25,6 +27,7 @@ mmdbinspect --db mjjipk.mmdb 211.1.1.1 111.1.1.1
                         }
                     },
                     "country": {
+                        "iso_code": "JP",
                         "names": {
                             "en": "JP 東京 Tokyo"
                         }
@@ -38,22 +41,23 @@ mmdbinspect --db mjjipk.mmdb 211.1.1.1 111.1.1.1
         "Database": "mjjipk.mmdb",
         "Records": [
             {
-                "Network": "111.1.1.1/22",
+                "Network": "223.5.5.5/32",
                 "Record": {
                     "city": {
                         "names": {
-                            "en": "移动"
+                            "en": "阿里巴巴anycast公共DNS"
                         }
                     },
                     "country": {
+                        "iso_code": "CN",
                         "names": {
-                            "en": "浙江–宁波"
+                            "en": "浙江–杭州"
                         }
                     }
                 }
             }
         ],
-        "Lookup": "111.1.1.1"
+        "Lookup": "223.5.5.5"
     }
 ]
 ```
