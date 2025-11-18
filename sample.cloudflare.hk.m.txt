@@ -1,3 +1,6 @@
+1.1.1.0 1.1.1.0 {16843008 16843008 {美国 亚太互联网络信息中心(CloudFlare节点)} {AU Australia Queensland Brisbane} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+1.1.1.1 1.1.1.1 {16843009 16843009 {澳大利亚 APNIC/CloudFlare公共DNS服务器} {AU Australia Queensland Brisbane} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+1.1.1.2 1.1.1.255 {16843010 16843263 {美国 亚太互联网络信息中心(CloudFlare节点)} {AU Australia Queensland Brisbane} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 8.20.100.0 8.20.100.255 {135554048 135554303 {美国–科罗拉多州–布鲁姆菲尔德–布卢姆菲尔德 Level3} {HK Hong Kong Hong Kong Hong Kong} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 8.29.109.117 8.29.109.117 {136146293 136146293 {美国  CZ88.NET} {GB United Kingdom of Great Britain and Northern Ireland England Hounslow} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 8.29.109.133 8.29.109.133 {136146309 136146309 {美国  CZ88.NET} {GB United Kingdom of Great Britain and Northern Ireland England Hounslow} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
@@ -39,6 +42,10 @@
 104.28.69.127 104.28.69.136 {1746683263 1746683272 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 104.28.69.241 104.28.69.242 {1746683377 1746683378 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 104.28.69.255 104.28.69.255 {1746683391 1746683391 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+104.28.71.0 104.28.71.1 {1746683648 1746683649 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+104.28.71.10 104.28.71.11 {1746683658 1746683659 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+104.28.71.18 104.28.71.21 {1746683666 1746683669 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
+104.28.71.54 104.28.71.55 {1746683702 1746683703 {美国  CZ88.NET} {US United States of America California San Francisco} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 104.28.83.101 104.28.83.108 {1746686821 1746686828 {美国  CZ88.NET} {JP Japan Tokyo Tokyo} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 104.28.99.97 104.28.99.104 {1746690913 1746690920 {美国  CZ88.NET} {JP Japan Tokyo Tokyo} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
 104.28.101.97 104.28.101.104 {1746691425 1746691432 {美国  CZ88.NET} {JP Japan Tokyo Tokyo} {HK Hong Kong AS Asia AS13335 Cloudflare, Inc. cloudflare.com}   }
