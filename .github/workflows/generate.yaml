@@ -35,7 +35,7 @@ jobs:
         run: wget https://raw.githubusercontent.com/FW27623/qqwry/main/qqwry.dat
 
       - name: IP2LOCATION
-        run: wget https://github.com/renfei/ip2location/raw/master/IP2LOCATION-LITE-DB11.IPV6.BIN.ZIP; unzip IP2LOCATION-LITE-DB11.IPV6.BIN.ZIP
+        run: wget https://github.com/renfei/ip2location/releases/latest/download/IP2LOCATION-LITE-DB11.BIN
 
       - name: download
         run: wget -O mjjipk "${{ secrets.MJJIPK_URL }}" 
